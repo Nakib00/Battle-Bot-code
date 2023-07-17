@@ -2,6 +2,7 @@
 
 Servo esc; // Create a servo object
 
+// Set pin number to the variable
 int L_EN_FOR_ONE = 3;
 int R_EN_FOR_ONE = 4;
 int L_PWM_FOR_ONE = 5;
@@ -27,6 +28,7 @@ void back_left();
 void back_right();
 void setup()
 {
+  //Define PinMode
   Serial.begin(9600);
   esc.attach(9); // Attach the ESC signal pin to digital pin 9
   pinMode(L_EN_FOR_ONE, OUTPUT);
@@ -198,6 +200,10 @@ void loop()
   break;
   }
 }
+
+//  All Function
+
+// Forward
 void forward()
 {
 
@@ -206,6 +212,8 @@ void forward()
   analogWrite(R_PWM_FOR_TWO, 0);
   analogWrite(L_PWM_FOR_TWO, speed_max);
 };
+
+// Backward
 void backward()
 {
   analogWrite(R_PWM_FOR_ONE, 0);
@@ -213,6 +221,8 @@ void backward()
   analogWrite(R_PWM_FOR_TWO, speed_max);
   analogWrite(L_PWM_FOR_TWO, 0);
 };
+
+// Right
 void right()
 {
   analogWrite(R_PWM_FOR_ONE, 0);
@@ -220,6 +230,8 @@ void right()
   analogWrite(R_PWM_FOR_TWO, 0);
   analogWrite(L_PWM_FOR_TWO, speed_max);
 };
+
+// Left
 void left()
 {
   analogWrite(R_PWM_FOR_ONE, speed_max);
@@ -227,6 +239,8 @@ void left()
   analogWrite(R_PWM_FOR_TWO, speed_max);
   analogWrite(L_PWM_FOR_TWO, 0);
 };
+
+// Stop
 void stopo()
 {
 
@@ -235,6 +249,8 @@ void stopo()
   analogWrite(R_PWM_FOR_TWO, 0);
   analogWrite(L_PWM_FOR_TWO, 0);
 };
+
+// Forward  left
 void forward_left()
 {
   analogWrite(R_PWM_FOR_ONE, 0);
@@ -242,6 +258,8 @@ void forward_left()
   analogWrite(R_PWM_FOR_TWO, speed_max);
   analogWrite(L_PWM_FOR_TWO, 0);
 };
+
+// Forward right
 void forward_right()
 {
   analogWrite(R_PWM_FOR_ONE, 0);
@@ -249,6 +267,8 @@ void forward_right()
   analogWrite(R_PWM_FOR_TWO, 0);
   analogWrite(L_PWM_FOR_TWO, 0);
 };
+
+// Back left
 void back_left()
 {
   analogWrite(R_PWM_FOR_ONE, 0);
@@ -256,6 +276,8 @@ void back_left()
   analogWrite(R_PWM_FOR_TWO, 0);
   analogWrite(L_PWM_FOR_TWO, speed_max);
 };
+
+// Back right
 void back_right()
 {
   analogWrite(R_PWM_FOR_ONE, speed_max);
