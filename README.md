@@ -53,9 +53,13 @@ If you encounter any issues while running the code or controlling the motors, co
 - Verify that the ESC is compatible with the motors and power supply.
 - Ensure that the correct digital pins are defined in the code for ESC signal control.
 
+## Softwere 
+
+- Bluetooth RC car: https://play.google.com/store/apps/details?id=braulio.calle.bluetoothRCcontroller
+
 ## License
 
-This code is licensed under the [MIT License](LICENSE).
+This code is licensed under ZAN Tech.
 
 Feel free to modify and adapt it according to your needs.
 
