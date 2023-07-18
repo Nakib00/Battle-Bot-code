@@ -55,7 +55,7 @@ If you encounter any issues while running the code or controlling the motors, co
 
 ## Softwere 
 
-- Bluetooth RC car: https://play.google.com/store/apps/details?id=braulio.calle.bluetoothRCcontroller
+- [Bluetooth RC car](https://play.google.com/store/apps/details?id=braulio.calle.bluetoothRCcontroller)
 
 ## License
 
