@@ -19,9 +19,9 @@ To run this code, you will need the following components:
 
 Please refer to the circuit diagram below for the connections:
 
-```
+
 ![alt text](https://github.com/Nakib00/Battle-Bot-code/blob/main/Circuit%20of%20Battle%20bot.png?raw=true)
-```
+
 
 Make sure to connect the ESC signal pin to the specified digital pin on the Arduino board and provide power to the motors using an appropriate power supply.
 
