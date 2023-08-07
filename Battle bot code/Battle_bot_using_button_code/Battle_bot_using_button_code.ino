@@ -143,11 +143,16 @@ void loop() {
       break;
     case 'W':
       // Set ESC to full speed
-      esc.writeMicroseconds(2000);
+      esc.writeMicroseconds(1400);
+      delay(100);
+      esc.writeMicroseconds(1500);
+      delay(100);
+      esc.writeMicroseconds(1600);
+      
       break;
     case 'U':
       // Set ESC to half speed
-      esc.writeMicroseconds(1500);
+      esc.writeMicroseconds(1300);
       break;
     case 'u':
       // Stop the ESC
